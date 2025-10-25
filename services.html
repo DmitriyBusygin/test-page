@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Our Professional Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .header p {
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .nav {
+            background: #fff;
+            padding: 15px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 40px;
+            background: white;
+            min-height: calc(100vh - 100px);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            font-size: 22px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+            font-size: 18px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #e8f4fd 0%, #d4e9f7 100%);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 5px solid #2196F3;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #1a237e;
+            margin-bottom: 10px;
+        }
+
+        .service-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .service-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Our Services</h1>
+        <p>Professional Development Solutions</p>
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="java_docs_camouflage.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>What We Offer</h2>
+        <p>We provide comprehensive software development services to help your business grow and succeed in the digital world.</p>
+
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Build modern, responsive web applications using cutting-edge technologies.</p>
+            <ul class="service-list">
+                <li>Full-stack development with React, Angular, Vue.js</li>
+                <li>Backend services with Node.js, Java Spring Boot, Python Django</li>
+                <li>RESTful API design and implementation</li>
+                <li>Database design and optimization</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Mobile Development</h3>
+            <p>Create native and cross-platform mobile applications for iOS and Android.</p>
+            <ul class="service-list">
+                <li>Native iOS development with Swift</li>
+                <li>Native Android development with Kotlin</li>
+                <li>Cross-platform apps with React Native and Flutter</li>
+                <li>Mobile UI/UX design</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Cloud Solutions</h3>
+            <p>Deploy and manage your applications in the cloud with confidence.</p>
+            <ul class="service-list">
+                <li>AWS, Azure, Google Cloud infrastructure setup</li>
+                <li>Containerization with Docker and Kubernetes</li>
+                <li>CI/CD pipeline implementation</li>
+                <li>Cloud migration and optimization</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Consulting & Support</h3>
+            <p>Get expert advice and ongoing support for your technical projects.</p>
+            <ul class="service-list">
+                <li>Technical architecture design</li>
+                <li>Code review and quality assurance</li>
+                <li>Performance optimization</li>
+                <li>24/7 technical support</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Виджет чата -->
+    <script src="https://widget.stage.divetim.ru/dive-widget.iife.js?apiKey=4d9d2906db88f4ad8bbda615d9d0d6bfb1075431" async></script>
+</body>
+</html>
