@@ -81,8 +81,7 @@ class NavigationManager {
         if (hash && SECTION_CONFIG[hash]) {
             this.showSection(hash);
         } else {
-            // Set initial state
-            history.replaceState({ section: 'home' }, '', '#home');
+            this.showSection('home');
         }
     }
 
@@ -113,11 +112,11 @@ class NavigationManager {
         // Update header
         this.updateHeader(sectionId);
 
-        // Scroll to top
-        this.scrollToTop();
+        // Always scroll to top
+        window.scrollTo(0, 0);
 
         // Update URL
-        this.updateURL(sectionId);
+        history.pushState({ section: sectionId }, '', `#${sectionId}`);
     }
 
     /**
@@ -160,28 +159,6 @@ class NavigationManager {
             // Update browser tab title
             document.title = headerData.pageTitle;
         }
-    }
-
-    /**
-     * Scroll to top of page with smooth animation
-     */
-    scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
-    /**
-     * Update browser URL without reload
-     * @param {string} sectionId - The section ID
-     */
-    updateURL(sectionId) {
-        history.pushState(
-            { section: sectionId },
-            '',
-            `#${sectionId}`
-        );
     }
 }
 

@@ -19,6 +19,16 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Prevent browser auto-scroll to hash -->
+    <script>
+        // Prevent browser from auto-scrolling to anchors on page load
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        // Immediately scroll to top
+        window.scrollTo(0, 0);
+    </script>
 </head>
 <body>
     <!-- Header Section -->
